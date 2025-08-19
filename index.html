@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Fjordesk</title>
+<meta name="description" content="Profesjonalne tłumaczenia, doradztwo oraz wsparcie administracyjne dla Polaków mieszkających w Norwegii."/>
+<meta name="keywords" content="tłumaczenia norweski, doradztwo Norwegia, CV Norwegia, NAV, fjord, desk, zasiłek, umowa, wniosek, urząd"/>
+<meta name="author" content="Fjordesk"/>
+
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="branding-group">
+  <h1 class="brand">
+    Fjordesk
+    <span class="tag">Twój polsko-norweski most porozumienia</span>
+  </h1>
+</header>
+
+<p class="intro-text">
+  Fjordesk oferuje tłumaczenia, doradztwo jak i wsparcie administracyjne. Dzięki wieloletniemu doświadczeniu zapewniamy naszym klientom skuteczną realizację formalności jak i komunikację b2b.
+</p>
+
+<section class="cards" aria-label="Usługi">
+  <article class="card"><div><h2 class="card-title">Biurokracja</h2><p class="card-list">Wspieramy w wypełnianiu formularzy, składaniu wniosków i kontaktach z urzędami.</p></div></article>
+  <article class="card"><div><h2 class="card-title">Tłumaczenie</h2><p class="card-list">Tłumaczenia dokumentów, rozmów, korespondencji e-mailowej/listowej.</p></div></article>
+  <article class="card"><div><h2 class="card-title">Kontakt z NAV</h2><p class="card-list">Wsparcie w kontaktach z NAV oraz innymi instytucjami socjalno-budżetowymi.</p></div></article>
+  <article class="card"><div><h2 class="card-title">CV + List Motywacyjny</h2><p class="card-list">Tworzenie i optymalizacja CV oraz listów motywacyjnych.</p></div></article>
+</section>
+
+<section class="contact-section">
+  <div class="contact-info">
+    <span>kontakt@Fjordesk.com</span>
+    <span>+48 732 567 007</span>
+  </div>
+</section>
+
+<div class="expandable-panel" id="expandable-panel">
+  <span>Cennik</span>
+  <span class="arrow" id="pricing-arrow">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="2" stroke-linecap="round"
+       stroke-linejoin="round">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</div>
+
+<section id="pricing-container">
+  <table class="pricing-table">
+    <thead>
+      <tr><th>Usługa</th><th>Cena</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Wykonanie telefonu do Urzędu</td><td>150 zł</td></tr>
+      <tr><td>Tłumaczenie istniejącego CV</td><td>200 zł</td></tr>
+      <tr><td>Przeniesienie zasiłku dla bezrobotnych do Polski PD/U2</td><td>250 zł</td></tr>
+      <tr><td>Stworzenie CV od podstaw</td><td>300 zł</td></tr>
+      <tr><td>Wniosek o zasiłek dla bezrobotnych — Permittering/Dagpenger</td><td>300 zł</td></tr>
+      <tr><td>Zasiłek Rodzinny (Barnetrygd)</td><td>400 zł</td></tr>
+      <tr><td>Zasiłek Opiekuńczy (kontantstøtte)</td><td>400 zł</td></tr>
+      <tr><td>Podanie o zasiłek rodzicielski (tacierzyński/macierzyński)</td><td>400 zł</td></tr>
+      <tr><td>Podanie o becikowe</td><td>400 zł</td></tr>
+      <tr><td>CV + list motywacyjny</td><td>400 zł</td></tr>
+      <tr><td>Podanie o zasiłek tacierzyński/macierzyński</td><td>400 zł</td></tr>
+      <tr><td>Podanie o becikowe (jednorazowa zapomoga)</td><td>500 zł</td></tr>
+      <tr><td>Odwołanie od decyzji NAV</td><td>500 zł</td></tr>
+      <tr><td>Wniosek o zasiłek dla bezrobotnych + rejestracja jako osoba bezrobotna + rejestracja CV w Nav</td><td>500 zł</td></tr>
+      <tr><td>Wniosek o zasiłek rehabilitacyjny AAP</td><td>500 zł</td></tr>
+      <tr><td>Wniosek o emeryturę</td><td>600 zł</td></tr>
+      <tr><td>Nie wymienione usługi, w tym tłumaczenia</td><td>Wycena Indywidualna</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<footer class="footer-cta">
+  Chcesz dowiedzieć się więcej? Skontaktuj się z nami, aby dopasować usługi do Twojej sytuacji.
+</footer>
+
+<script>
+const panel   = document.getElementById('expandable-panel');
+const drawer  = document.getElementById('pricing-container');
+const arrow   = document.getElementById('pricing-arrow');
+
+panel.addEventListener('click', () => {
+  const opening = !drawer.classList.contains('open');
+  drawer.classList.toggle('open', opening);
+  arrow.classList.toggle('down', opening);
+});
+</script>
+
+</body>
+</html>
