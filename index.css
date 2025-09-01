@@ -87,7 +87,6 @@ body{
 .card h3{margin:.2rem 0 .4rem 0}
 .card p{color:#d9e3ff;line-height:1.45}
 
-.pricing-details{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1rem}
 .pricing-details>summary{cursor:pointer;list-style:none;font-weight:800;margin:.25rem 0 .75rem 0}
 .pricing-details>summary::-webkit-details-marker{display:none}
 .table-wrap{overflow:auto;border-radius:12px;border:1px solid var(--border)}
@@ -120,4 +119,13 @@ body{
   .nav-toggle{display:inline-block}
   .site-nav{position:absolute;right:1rem;top:64px;flex-direction:column;gap:.5rem;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:.5rem;display:none}
   .site-nav.open{display:flex}
+}
+
+
+.nav-toggle svg{display:block;}
+
+@media (max-width: 600px){
+  .pricing-table{min-width:0;}
+  .pricing-table th, .pricing-table td{padding:10px;}
+  .pricing-table td:first-child{word-break:break-word;}
 }
