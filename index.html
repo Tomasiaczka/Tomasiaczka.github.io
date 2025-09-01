@@ -1,95 +1,184 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Fjordesk</title>
-<meta name="description" content="Profesjonalne tłumaczenia, doradztwo oraz wsparcie administracyjne dla Polaków mieszkających w Norwegii."/>
-<meta name="keywords" content="tłumaczenia norweski, doradztwo Norwegia, CV Norwegia, NAV, fjord, desk, zasiłek, umowa, wniosek, urząd"/>
-<meta name="author" content="Fjordesk"/>
-<link rel="icon" href="logo.png" type="image/png">
-
-<link rel="stylesheet" href="index.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Fjordesk — Wsparcie dla Polaków w Norwegii</title>
+  <meta name="description" content="Fjordesk: tłumaczenia, doradztwo i wsparcie administracyjne dla Polaków w Norwegii. NAV, CV, zasiłki, wnioski i kontakty z urzędami — szybko i profesjonalnie."/>
+  <meta name="author" content="Fjordesk"/>
+  <meta property="og:title" content="Fjordesk — Twój polsko‑norweski most porozumienia">
+  <meta property="og:description" content="Profesjonalne tłumaczenia, doradztwo i wsparcie administracyjne w Norwegii.">
+  <meta property="og:image" content="logo.png">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
 
-<header class="branding-group">
-  <h1 class="brand">
-    Fjordesk
-    <span class="tag">Twój polsko-norweski most porozumienia</span>
-  </h1>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <img src="logo.png" alt="Fjordesk — logo" class="brand-logo" loading="eager" width="128" height="64"/>
+        <span class="brand-name">Fjordesk</span>
+      </a>
 
-<p class="intro-text">
-  Fjordesk oferuje tłumaczenia, doradztwo jak i wsparcie biurokratyczne. Dzięki wieloletniemu doświadczeniu zapewniamy naszym klientom skuteczną realizację formalności.
-</p>
+      <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">
+        <span class="sr-only">Otwórz menu</span>
+        ☰
+      </button>
 
-<section class="cards" aria-label="Usługi">
-  <article class="card"><div><h2 class="card-title">Biurokracja</h2><p class="card-list">Wspieramy w wypełnianiu formularzy, składaniu wniosków i kontaktach z urzędami.</p></div></article>
-  <article class="card"><div><h2 class="card-title">Tłumaczenie</h2><p class="card-list">Tłumaczenia dokumentów, rozmów, korespondencji e-mailowej/listowej.</p></div></article>
-  <article class="card"><div><h2 class="card-title">Kontakt z NAV</h2><p class="card-list">Wsparcie w kontaktach z NAV oraz innymi instytucjami socjalno-budżetowymi.</p></div></article>
-  <article class="card"><div><h2 class="card-title">CV + List Motywacyjny</h2><p class="card-list">Tworzenie i optymalizacja CV oraz listów motywacyjnych.</p></div></article>
-</section>
+      <nav id="site-nav" class="site-nav" aria-label="Główne menu">
+        <a href="#services">Usługi</a>
+        <a href="#pricing">Cennik</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="contact-section">
-  <div class="contact-info">
-    <span>kontakt@Fjordesk.com</span>
-    <span>+48 732 567 007</span>
-  </div>
-</section>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Twój polsko‑norweski most porozumienia</h1>
+          <p>Pomagamy poruszać się po norweskich formalnościach: od <strong>NAV</strong>, przez <strong>CV</strong> i listy motywacyjne, po <strong>tłumaczenia</strong> i kontakty z urzędami.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Skontaktuj się</a>
+            <a href="#pricing" class="btn btn-outline">Zobacz cennik</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="expandable-panel" id="expandable-panel">
-  <span>Cennik</span>
-  <span class="arrow" id="pricing-arrow">
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
-       stroke="currentColor" stroke-width="2" stroke-linecap="round"
-       stroke-linejoin="round">
-    <polyline points="9 18 15 12 9 6"></polyline>
-  </svg>
-</div>
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Co robimy</h2>
+          <p class="lead">Klarowna komunikacja, porządek w dokumentach i oszczędność Twojego czasu.</p>
+        </header>
 
-<section id="pricing-container">
-  <table class="pricing-table">
-    <thead>
-      <tr><th>Usługa</th><th>Cena</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Wykonanie telefonu do Urzędu</td><td>150 zł</td></tr>
-      <tr><td>Tłumaczenie istniejącego CV</td><td>200 zł</td></tr>
-      <tr><td>Przeniesienie zasiłku dla bezrobotnych do Polski PD/U2</td><td>250 zł</td></tr>
-      <tr><td>Stworzenie CV od podstaw</td><td>300 zł</td></tr>
-      <tr><td>Wniosek o zasiłek dla bezrobotnych — Permittering/Dagpenger</td><td>300 zł</td></tr>
-      <tr><td>Zasiłek Rodzinny (Barnetrygd)</td><td>400 zł</td></tr>
-      <tr><td>Zasiłek Opiekuńczy (kontantstøtte)</td><td>400 zł</td></tr>
-      <tr><td>Podanie o zasiłek rodzicielski (tacierzyński/macierzyński)</td><td>400 zł</td></tr>
-      <tr><td>Podanie o becikowe</td><td>400 zł</td></tr>
-      <tr><td>CV + list motywacyjny</td><td>400 zł</td></tr>
-      <tr><td>Podanie o zasiłek tacierzyński/macierzyński</td><td>400 zł</td></tr>
-      <tr><td>Podanie o becikowe (jednorazowa zapomoga)</td><td>500 zł</td></tr>
-      <tr><td>Odwołanie od decyzji NAV</td><td>500 zł</td></tr>
-      <tr><td>Wniosek o zasiłek dla bezrobotnych + rejestracja jako osoba bezrobotna + rejestracja CV w Nav</td><td>500 zł</td></tr>
-      <tr><td>Wniosek o zasiłek rehabilitacyjny AAP</td><td>500 zł</td></tr>
-      <tr><td>Wniosek o emeryturę</td><td>600 zł</td></tr>
-      <tr><td>Nie wymienione usługi, w tym tłumaczenia</td><td>Wycena Indywidualna</td></tr>
-    </tbody>
-  </table>
-</section>
+        <div class="cards" role="list">
+          <article class="card" role="listitem">
+            <h3>Biurokracja</h3>
+            <p>Wypełnianie formularzy, składanie wniosków, oficjalna korespondencja i terminy — ogarniamy wszystko.</p>
+          </article>
 
-<footer class="footer-cta">
-  Chcesz dowiedzieć się więcej? Skontaktuj się z nami, aby dopasować usługi do Twojej sytuacji.
-</footer>
+          <article class="card" role="listitem">
+            <h3>Tłumaczenie</h3>
+            <p>Dokumenty, rozmowy, e‑maile i pisma. Precyzyjnie i szybko — po polsku i po norwesku.</p>
+          </article>
 
-<script>
-const panel   = document.getElementById('expandable-panel');
-const drawer  = document.getElementById('pricing-container');
-const arrow   = document.getElementById('pricing-arrow');
+          <article class="card" role="listitem">
+            <h3>NAV i instytucje</h3>
+            <p>Wsparcie w kontaktach z NAV oraz innymi instytucjami socjalnymi i podatkowymi.</p>
+          </article>
 
-panel.addEventListener('click', () => {
-  const opening = !drawer.classList.contains('open');
-  drawer.classList.toggle('open', opening);
-  arrow.classList.toggle('down', opening);
-});
-</script>
+          <article class="card" role="listitem">
+            <h3>CV + List motywacyjny</h3>
+            <p>Tworzenie i optymalizacja dokumentów aplikacyjnych zgodnie z norweskim rynkiem pracy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <!-- Pricing -->
+    <section id="pricing" class="section section-alt">
+      <div class="container">
+        <header class="section-header">
+          <h2>Cennik</h2>
+          <p class="lead">Przejrzyście i bez ukrytych kosztów. Wycena indywidualna dla złożonych spraw.</p>
+        </header>
+
+        <details class="pricing-details" open>
+          <summary aria-controls="pricing-table" aria-expanded="true">
+            <span>Rozwiń / zwiń pozycje</span>
+          </summary>
+
+          <div id="pricing-table" class="table-wrap">
+            <table class="pricing-table">
+              <thead>
+                <tr><th scope="col">Usługa</th><th scope="col">Cena</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Wykonanie telefonu do urzędu</td><td>150 zł</td></tr>
+                <tr><td>Tłumaczenie istniejącego CV</td><td>200 zł</td></tr>
+                <tr><td>Przeniesienie zasiłku dla bezrobotnych do Polski PD/U2</td><td>250 zł</td></tr>
+                <tr><td>Stworzenie CV od podstaw</td><td>300 zł</td></tr>
+                <tr><td>Wniosek o zasiłek dla bezrobotnych — Permittering/Dagpenger</td><td>300 zł</td></tr>
+                <tr><td>Zasiłek rodzinny (Barnetrygd)</td><td>400 zł</td></tr>
+                <tr><td>Zasiłek opiekuńczy (Kontantstøtte)</td><td>400 zł</td></tr>
+                <tr><td>Zasiłek rodzicielski (tacierzyński/macierzyński)</td><td>400 zł</td></tr>
+                <tr><td>Becikowe (jednorazowa zapomoga)</td><td>500 zł</td></tr>
+                <tr><td>CV + list motywacyjny</td><td>400 zł</td></tr>
+                <tr><td>Odwołanie od decyzji NAV</td><td>500 zł</td></tr>
+                <tr><td>Wniosek o zasiłek dla bezrobotnych + rejestracja bezrobotnego + rejestracja CV w NAV</td><td>500 zł</td></tr>
+                <tr><td>Wniosek o zasiłek rehabilitacyjny AAP</td><td>500 zł</td></tr>
+                <tr><td>Wniosek o emeryturę</td><td>600 zł</td></tr>
+                <tr><td>Pozostałe usługi (w tym tłumaczenia)</td><td>Wycena indywidualna</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+
+        <div class="note">
+          Ceny obejmują standardowe przypadki. W trudniejszych sprawach przygotujemy krótką <strong>bezpłatną</strong> wycenę przed startem.
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Kontakt</h2>
+          <p class="lead">Napisz lub zadzwoń — odpisujemy tego samego dnia roboczego.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-item">
+            <div class="label">E‑mail</div>
+            <a href="mailto:kontakt@Fjordesk.com">kontakt@Fjordesk.com</a>
+          </div>
+          <div class="contact-item">
+            <div class="label">Telefon</div>
+            <a href="tel:+48732567007">+48&nbsp;732&nbsp;567&nbsp;007</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Fjordesk</div>
+      <div class="footer-links">
+        <a href="#services">Usługi</a>
+        <a href="#pricing">Cennik</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        const el = document.querySelector(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({ behavior: 'smooth', block: 'start'});
+          nav.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+  </script>
 </body>
 </html>
