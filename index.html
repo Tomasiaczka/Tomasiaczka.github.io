@@ -9,7 +9,7 @@
   <meta property="og:title" content="Fjordesk — Twój polsko‑norweski most porozumienia">
   <meta property="og:description" content="Profesjonalne tłumaczenia, doradztwo i wsparcie administracyjne w Norwegii.">
   <meta property="og:image" content="logo.png">
-  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="icon" href="ctaimage.png" type="image/png">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -17,15 +17,12 @@
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="#">
-        <img src="logo.png" alt="Fjordesk — logo" class="brand-logo" loading="eager" width="128" height="64"/>
-        <span class="brand-name">Fjordesk</span>
-      </a>
+      <span class="brand-name">Fjordesk</span>
 
       <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Otwórz menu">
         <span class="sr-only">Otwórz menu</span>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="white" aria-hidden="true" focusable="false">
-          <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+          <path d="M3 7h18M3 12h18M3 17h18"/>
         </svg>
       </button>
 
@@ -38,16 +35,22 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero-inner">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
         <div class="hero-copy">
-          <h1>Twój polsko‑norweski most porozumienia</h1>
-          <p>Pomagamy poruszać się po norweskich formalnościach: od <strong>NAV</strong>, przez <strong>CV</strong> i listy motywacyjne, po <strong>tłumaczenia</strong> i kontakty z urzędami.</p>
+          <div>
+            <h1 id="hero-title">Twój polsko‑norweski most porozumienia</h1>
+            <p>Pomagamy poruszać się po norweskich formalnościach: od <strong>NAV</strong>, przez <strong>CV</strong> i listy motywacyjne, po <strong>tłumaczenia</strong> i kontakty z urzędami.</p>
+          </div>
           <div class="hero-cta">
             <a href="#contact" class="btn btn-primary">Skontaktuj się</a>
             <a href="#pricing" class="btn btn-outline">Zobacz cennik</a>
           </div>
         </div>
+      </div>
+
+      <div class="hero-img" aria-hidden="true">
+        <img src="ctaimage.png" alt="">
       </div>
     </section>
 
@@ -117,7 +120,7 @@
         </div>
 
         <div class="note">
-          Ceny są kwotami netto; Do każdej ceny doliczamy VAT 23%
+          Ceny są kwotami netto; do każdej ceny doliczamy VAT 23%.
           <br><br>
           Ceny obejmują standardowe przypadki. W trudniejszych sprawach przygotujemy krótką <strong>bezpłatną</strong> wycenę przed startem.
         </div>
@@ -157,28 +160,29 @@
   </footer>
 
   <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.getElementById('site-nav');
+
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    });
+
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', e => {
         const id = a.getAttribute('href');
         const el = document.querySelector(id);
         if (el) {
           e.preventDefault();
-          el.scrollIntoView({ behavior: 'smooth', block: 'start'});
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
           nav.classList.remove('open');
           toggle.setAttribute('aria-expanded', 'false');
         }
       });
     });
-    const toggle = document.querySelector('.nav-toggle');
-    const nav = document.getElementById('site-nav');
-    toggle.addEventListener('click', () => {
-      const expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!expanded));
-      nav.classList.toggle('open');
-    });
   </script>
 </body>
 </html>
-
-
